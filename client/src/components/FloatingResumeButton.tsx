@@ -21,7 +21,7 @@ export default function FloatingResumeButton() {
       // Create a temporary link to download the resume
       const link = document.createElement("a");
       link.href = siteData.socialLinks.resumeUrl;
-      link.download = "BHARATHI-Resume.pdf";
+      link.download = "Bharathi-B-Resume.pdf";
       link.target = "_blank";
       link.rel = "noopener noreferrer";
       document.body.appendChild(link);

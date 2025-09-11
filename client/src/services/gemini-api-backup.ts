@@ -274,22 +274,6 @@ const getEnhancedFallbackResponse = (userMessage: string): string => {
   return "🤖 **I'm here to help!** I can provide detailed information about Bharathi's *education*, *technical skills*, *innovative projects*, and professional experience.\n\n❓ **Try asking about**: his college journey, programming skills, AI projects, certificates, or get some coding motivation! What would you like to explore? 😊";
 };
 
-    const data = await response.json();
-    
-    if (data.candidates && data.candidates[0] && data.candidates[0].content) {
-      return data.candidates[0].content.parts[0].text;
-    } else {
-      throw new Error('Invalid response format from Gemini API');
-    }
-
-  } catch (error) {
-    console.error('Gemini API Error:', error);
-    
-    // Fallback to local responses for faster, reliable responses
-    return getFallbackResponse(userMessage);
-  }
-};
-
 // Fallback responses when API is unavailable
 const getFallbackResponse = (userMessage: string): string => {
   const message = userMessage.toLowerCase();

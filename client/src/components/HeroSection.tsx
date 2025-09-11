@@ -133,24 +133,26 @@ export default function HeroSection() {
               role="listitem"
             >
               <i className="fas fa-envelope text-lg md:text-xl" aria-hidden="true"></i>
-              <a
-                href="/Bharathi%20B-Resume.pdf"
-                download
-                className="resume-download-btn"
-                style={{
-                  display: 'inline-block',
-                  marginTop: '1rem',
-                  padding: '0.75rem 1.5rem',
-                  background: '#2563eb',
-                  color: '#fff',
-                  borderRadius: '0.5rem',
-                  textDecoration: 'none',
-                  fontWeight: 'bold',
-                  boxShadow: '0 2px 8px rgba(0,0,0,0.08)'
-                }}
-              >
-                Download Resume
-              </a>
+            </motion.a>
+          </motion.div>
+
+          {/* Download Resume Button */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 2.5, duration: 0.8 }}
+            className="mt-6"
+          >
+            <motion.a
+              whileHover={{ scale: 1.05, y: -2 }}
+              whileTap={{ scale: 0.95 }}
+              href="/Bharathi%20B-Resume.pdf"
+              download="Bharathi-B-Resume.pdf"
+              className="inline-flex items-center px-6 py-3 glass-violet text-slate-600 hover:text-violet-600 hover:bg-violet-100 rounded-full font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-offset-2 shadow-lg hover:shadow-xl"
+              aria-label="Download Bharathi's resume"
+            >
+              <i className="fas fa-download mr-2 text-lg" aria-hidden="true"></i>
+              Download Resume
             </motion.a>
           </motion.div>
         </div>
