@@ -1,0 +1,23 @@
+{
+  "name": "Bharathi B. - Frontend Developer & AI Enthusiast",
+  "short_name": "Bharathi Portfolio",
+  "description": "Portfolio website of Bharathi B., a Frontend Developer and AI Enthusiast specializing in React, JavaScript, and modern web technologies.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#8b5cf6",
+  "orientation": "portrait-primary",
+  "categories": ["portfolio", "developer", "technology"],
+  "lang": "en",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable any"
+    }
+  ],
+  "screenshots": [
+  ]
+}
