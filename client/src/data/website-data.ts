@@ -27,7 +27,7 @@ export const personalInfo = {
   socialLinks: {
     github: "https://github.com/txb1y",
     linkedin: "https://www.linkedin.com/in/bharathi54123",
-    resumeUrl: "/BHARATHI-Resume.pdf",
+    resumeUrl: "/Bharathi%20B-Resume.pdf",
     email: "mailto:bharathii54123@gmail.com"
   }
 };
