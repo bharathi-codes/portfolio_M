@@ -7,10 +7,13 @@
     "dev": "npx http-server -p 8080",
     "preview": "npx http-server -p 8080"
   },
-  "keywords": ["portfolio", "web-developer"],
+  "keywords": [
+    "portfolio",
+    "web-developer"
+  ],
   "author": "Bharathi B",
   "license": "MIT",
   "dependencies": {
-    "@vercel/analytics": "^1.1.1"
+    "@vercel/analytics": "^1.6.1"
   }
 }
