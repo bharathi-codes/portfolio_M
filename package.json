@@ -1,7 +1,7 @@
 {
   "name": "bharathi-portfolio",
   "version": "1.0.0",
-  "description": "Personal portfolio website with liquid glass design",
+  "description": "Personal portfolio website",
   "type": "module",
   "scripts": {
     "dev": "npx http-server -p 8080",
