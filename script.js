@@ -1,4 +1,44 @@
 // ========================================
+// CONTENT PROTECTION
+// ========================================
+
+// Disable right-click on sensitive content
+document.addEventListener('DOMContentLoaded', () => {
+    // Disable right-click on certificates and resume
+    const protectedElements = document.querySelectorAll('.certificate-item, .resume-viewer, iframe');
+    protectedElements.forEach(el => {
+        el.addEventListener('contextmenu', (e) => {
+            e.preventDefault();
+            return false;
+        });
+    });
+    
+    // Prevent dragging of images
+    document.querySelectorAll('img').forEach(img => {
+        img.addEventListener('dragstart', (e) => e.preventDefault());
+    });
+    
+    // Disable text selection on certificates
+    document.querySelectorAll('.certificate-item').forEach(el => {
+        el.style.userSelect = 'none';
+        el.style.webkitUserSelect = 'none';
+    });
+});
+
+// Check referrer to prevent hotlinking
+if (document.referrer && !document.referrer.includes(window.location.hostname)) {
+    const allowedDomains = ['bharathi-portfolio.xyz', 'localhost', '127.0.0.1'];
+    const isAllowed = allowedDomains.some(domain => 
+        window.location.hostname.includes(domain) || document.referrer.includes(domain)
+    );
+    
+    if (!isAllowed) {
+        // Redirect if accessed from external source
+        window.location.href = '/';
+    }
+}
+
+// ========================================
 // INTERSECTION OBSERVER
 // ========================================
 

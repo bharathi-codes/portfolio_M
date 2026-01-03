@@ -1,0 +1,7 @@
+# Protect sensitive files
+Resume/
+Clg Cetificates/
+
+# Keep directory structure
+!Resume/.gitkeep
+!Clg Cetificates/.gitkeep
