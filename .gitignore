@@ -1,7 +1,16 @@
-# Protect sensitive files
-Resume/
-Clg Cetificates/
+# Dependencies
+node_modules/
+package-lock.json
 
-# Keep directory structure
-!Resume/.gitkeep
-!Clg Cetificates/.gitkeep
+# Build outputs
+dist/
+build/
+.vercel/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
